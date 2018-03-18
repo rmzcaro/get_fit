@@ -28,18 +28,87 @@ FOOD/DRINK SELECTION
 
 -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Get fit</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
 
 </head>
-<body>
-    <p>hello world</p>
 
-    <script src="./getfit.js"></script>
-    <link src="./images.style.css">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-5addb6">
+        <img id="logo" img src="./assets/images/icons/dummy-logo.png" alt="getfitlogo">
+        <a class="navbar-brand font-italic font-weight-bold" href="./index1.html">Get Fit</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index1.html">Home</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Products.html">Products</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Blog.html">Blog</a>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <form class="col-md-3">
+                <p>Username:
+                    <input type="text" name="username">
+                </p>
+                <p>Age:
+                    <input type="number" age="age">
+                </p>
+                <p>Weight:
+                    <input type="number" weight="weight">
+                </p>
+                <p>Height:
+                    <input id="feet" type="number" name="feet" min="0" max="10" step="1">
+                    <label for="feet">feet:
+                    </label>
+                    <input id="inches" type="number" name="inches" min="0" max="11" step="1">
+                    <label for="inches">inches:
+                    </label>
+                </p>
+                <p>Gender:
+                    <input type="text" gender="gender">
+                </p>
+                <p>
+                    <input type="submit" class="btn-info" id="submit-btn">
+                </p>
+            </form>
+            <div id="btn-section" class="col-md-9">
+
+            </div>
+
+        </div>
+
+
+
+
+        <script src="./getfit.js"></script>
+        <link src="./images.style.css">
 
 </body>
+
 </html>
