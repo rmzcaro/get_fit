@@ -1,10 +1,41 @@
+.topbanner{
+
+    background-color: rgb(83, 111, 119);
+    height: 5em;
+    text-align: center;
+    text-justify: auto;
+    padding-top: 2em;
+    font-size: 3em;
+    font-stretch: normal;
+
+
+}
+.container-fluid{
+
+    background-color: aqua;
+    padding: 1em 1em 1em 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+#logo{
+
+    width:6em;
+    height:4em;
+    float: left;
+    margin-top:-1.6em
+   
+
+}
+
 .img-animate {
     position: center;
-    
     width:  400px;
     height: 400px;
     background-position: 50% 50%;
-    background-size:     cover;
+    background-size:     cover
 }
 
 .btn {
@@ -12,9 +43,18 @@
  width:400px
 }
 
-.fitfitfit {
-    background-image: url("");
-    background-repeat: repeat;
+.both{
+   
+        display:inline-block;
+    }
 
-
+.gifnbuttons{
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.fitfitfit {
+    background-image: url("assets\images\logoother\mosaic.jpg");
+    background-repeat: repeat
+}
+

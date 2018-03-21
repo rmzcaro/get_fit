@@ -1,76 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="assets\magicscroll-trial\magicscroll-trial\magicscroll\magicscroll.css"/>
+    <link type="text/css" rel="stylesheet" href="assets\magicscroll-trial\magicscroll-trial\magicscroll\magicscroll.css" />
     <script type="text/javascript" src="assets\magicscroll-trial\magicscroll-trial\magicscroll\magicscroll.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="fitfitfit">
-        <div class="MagicScroll" data-options="mode: cover-flow" >
-                <a><img id="Img" data-name="bacon" src="assets/images/food/bacon.jpg"/></a>
-                <a><img id="Img" data-name="bread" src="assets/images/food/bread.png"/></a>
-                <a><img id="Img" data-name="cheesecake" src="assets/images/food/cheesecake.jpg"/></a>
-                <a><img id="Img" data-name="chicken" src="assets/images/food/chicken.jpg"/></a>
-                <a><img id="Img" data-name="chips" src="assets/images/food/chips.jpg"/></a>
-                <a><img id="Img" data-name="chocolate" src="assets/images/food/chocolate.jpg"/></a>
-                <a><img id="Img" data-name="doughnut" src="assets/images/food/doughnut.png"/></a>
-                <a><img id="Img" data-name="fries" src="assets/images/food/fries.jpg"/></a>
-                <a><img id="Img" data-name="hamburger" src="assets/images/food/hamburger.png"/></a>
-                <a><img id="Img" data-name="icecream" src="assets/images/food/icecream.jpg"/></a>
-                <a><img id="Img" data-name="nachos" src="assets/images/food/nachos.jpg"/></a>
-                <a><img id="Img" data-name="pizza" src="assets/images/food/pizza.png"/></a>
-                <a><img id="Img" data-name="sushi" src="assets/images/food/sushi.jpg"/></a>
-                <a><img id="Img" data-name="taco" src="assets/images/food/taco.jpg"/></a>
-                <a><img id="Img" data-name="fetuccinni" src="assets/images/food/alfredo.jpg"/></a>
-            </div>
 
-
-            <div class= "MagicScroll" data-options="mode: cover-flow">
-                <a><img id="Img" data-name="beer" src="assets/images/drink/beer.png"/></a>
-                <a><img id="Img" data-name="cola" src="assets/images/drink/cola.jpg"/></a>
-                <a><img id="Img" data-name="energy drink" src="assets/images/drink/energy.jpeg"/></a>
-                <a><img id="Img" data-name="frappuccino" src="assets/images/drink/frappacino.jpeg"/></a>
-                <a><img id="Img" data-name="fruit juice" src="assets/images/drink/fruit.png"/></a>
-                <a><img id="Img" data-name="hot chocolate" src="assets/images/drink/hchoco.jpg"/></a>
-                <a><img id="Img" data-name="lemonade" src="assets/images/drink/lemonade.jpeg"/></a>
-                <a><img id="Img" data-name="margarita" src="assets/images/drink/magarita.jpg"/></a>
-                <a><img id="Img" data-name="milk" src="assets/images/drink/milk.png"/></a>
-                <a><img id="Img" data-name="milkshake" src="assets/images/drink/milkshake.png"/></a>
-                <a><img id="Img" data-name="slushie" src="assets/images/drink/slushie.jpeg"/></a>
-                <a><img id="Img" data-name="smoothie" src="assets/images/drink/smoothienew.jpg"/></a>
-                <a><img id="Img" data-name="sports drink" src="assets/images/drink/sports.png"/></a>
-                <a><img id="Img" data-name="sweet tea" src="assets/images/drink/tea.jpeg"/></a>
-                <a><img id="Img" data-name="wine" src="assets/images/drink/wine.jpeg"/></a>
-
-
-
-            </div>
-
-    <div>       
-            <div>
-                <img id="Img" class="img-animate" src="assets\images\intensity\high.gif" >
-                <img id="Img" class="img-animate" src="assets\images\intensity\medium.gif" >
-                <img id="Img" class="img-animate" src="assets\images\intensity\low.gif" >
-                    
-            </div>
-
-
-             <div class="button-list" >                
-            <button class="btn"  value="walking" data-name="walking" >Low Intensity Workout</button>
-            <button class="btn"  value="jogging" data-name="jogging" >Medium Intensity Workout</button>
-            <button class="btn"  value="running" data-name="running" >High Inensity Workout </button>
-         
-            </div>
+    <h1 class="topbanner"> Curb Your Craving or Work it Off!!!
+        <img id="logo" src="assets\images\logoother\logo.png">
+    </h1>
+    <div class="MagicScroll" data-options="mode: cover-flow">
+        <a>
+            <img id="Img" data-name="bacon" src="assets/images/food/bacon.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="bread" src="assets/images/food/bread.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="cheesecake" src="assets/images/food/cheesecake.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="chicken" src="assets/images/food/chicken.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="chips" src="assets/images/food/chips.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="chocolate" src="assets/images/food/chocolate.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="doughnut" src="assets/images/food/doughnut.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="fries" src="assets/images/food/fries.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="hamburger" src="assets/images/food/hamburger.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="icecream" src="assets/images/food/icecream.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="nachos" src="assets/images/food/nachos.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="pizza" src="assets/images/food/pizza.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="sushi" src="assets/images/food/sushi.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="taco" src="assets/images/food/taco.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="fetuccinni" src="assets/images/food/alfredo.jpg" />
+        </a>
     </div>
-    
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <div class="MagicScroll" data-options="mode: cover-flow">
+        <a>
+            <img id="Img" data-name="beer" src="assets/images/drink/beer.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="cola" src="assets/images/drink/cola.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="energy drink" src="assets/images/drink/energy.jpeg" />
+        </a>
+        <a>
+            <img id="Img" data-name="frappuccino" src="assets/images/drink/frappacino.jpeg" />
+        </a>
+        <a>
+            <img id="Img" data-name="fruit juice" src="assets/images/drink/fruit.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="hot chocolate" src="assets/images/drink/hchoco.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="lemonade" src="assets/images/drink/lemonade.jpeg" />
+        </a>
+        <a>
+            <img id="Img" data-name="margarita" src="assets/images/drink/magarita.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="milk" src="assets/images/drink/milk.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="milkshake" src="assets/images/drink/milkshake.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="slushie" src="assets/images/drink/slushie.jpeg" />
+        </a>
+        <a>
+            <img id="Img" data-name="smoothie" src="assets/images/drink/smoothienew.jpg" />
+        </a>
+        <a>
+            <img id="Img" data-name="sports drink" src="assets/images/drink/sports.png" />
+        </a>
+        <a>
+            <img id="Img" data-name="sweet tea" src="assets/images/drink/tea.jpeg" />
+        </a>
+        <a>
+            <img id="Img" data-name="wine" src="assets/images/drink/wine.jpeg" />
+        </a>
+
+
+
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="gifnbuttons">
+
+            <div class="both"> 
+            <img id="Img" class="img-animate" src="assets\images\intensity\high.gif">
+            <br>
+            <button class="btn" value="running" data-name="running">High Inensity Workout </button>
+            </div>
+
+            <div class="both"> 
+            <img id="Img" class="img-animate" src="assets\images\intensity\medium.gif">
+            <br>
+            <button class="btn" value="jogging" data-name="jogging">Medium Intensity Workout</button>
+            </div>
+
+            <div class="both">
+            <img id="Img" class="img-animate" src="assets\images\intensity\low.gif">
+            <br>
+            <button class="btn" value="walking" data-name="walking">Low Intensity Workout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
