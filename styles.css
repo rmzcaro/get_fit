@@ -8,7 +8,9 @@
     width: 60em;
     margin-top: 1em;
     margin-left: 10em;
-
+  
+    border: .5em solid rgb(25, 13, 184);
+    border-radius: 1em;
  
 
 }
@@ -20,13 +22,31 @@
     padding-top: 2em;
     font-size: 3em;
     font-stretch: normal;
+    font-family: Courier New, Courier, monospace;
+    font-weight: bolder
 }
 
+
+
+h5{
+     font-size: 2em;
+     color:rgb(151, 240, 151)
+}
+
+h7{
+    font-size: 2em;
+    color:rgb(151, 240, 151)
+}
 .container-fluid{
     background-color: rgb(29, 126, 126);
     padding: 1em 1em 1em 1em;
-    margin: 1em 1em 1em 1em;
-    width: 65em
+    margin-right: auto;
+    margin-left:auto;
+    margin-top:3em;
+    width: 64.5em;
+    border: .5em solid rgb(25, 13, 184);
+    border-radius: 1em;
+
 }
 
 #logo{
@@ -42,8 +62,15 @@
     width: 300px;
     height: 300px;
     background-position: 50% 50%;
-    background-size:     cover
+    background-size:     cover;
+    border: .1em solid rgb(8, 82, 14);
+    border-radius: .2em;
 }
+#Img{
+    border: .3em solid rgb(8, 82, 14);
+    border-radius: .2em;
+}
+
 
 #btn {
  width:300px;
@@ -61,18 +88,15 @@
     }
 
 
-.fitfitfit {
-    background-image: url("assets\images\logoother\mosaic.jpg");
+.fullpage {
+    background-image: url(assets\images\logoother\mosaic.jpg);
     background-repeat: repeat
 }
 
 
-
-
-
 .nav-pills { font-family: 'Comfortaa', 'cursive';
     color: #aadcfd;
-    font-size: 3em;
+    font-size: 2em;
     background-color: rgb(22, 22, 51);
     height: 20%;
     }
