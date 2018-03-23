@@ -1,6 +1,22 @@
 
+.topbanner{
+  
+    height: 5em;
+    text-align: center;
+    text-justify: auto;
+    padding-top: 2em;
+    color:rgb(152, 219, 152);
+    font-size: 3em;
+    font-stretch: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1600
+}
 
 
+.girl-image{
+    background-image: url(assets/images/logoother/balllady.jpg);
+    background-size: cover;
+}
 
 .MagicScroll{
 
@@ -11,22 +27,58 @@
   
     border: .5em solid rgb(25, 13, 184);
     border-radius: 1em;
- 
 
 }
-.topbanner{
-    background-color: rgb(83, 111, 119);
-    height: 5em;
+
+.about { border-radius: 10%;
+    width: 70%;
+    height: 10em;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#666161;
+    border: .2em dotted rgb(8, 17, 8);
+    font-size: 2em;
+    font-family: 'Confortaa', 'cursive'; 
     text-align: center;
-    text-justify: auto;
-    padding-top: 2em;
-    font-size: 3em;
-    font-stretch: normal;
-    font-family: Courier New, Courier, monospace;
-    font-weight: bolder
+    color:rgb(14, 12, 12);
+}
+    
+.caloriesshow{
+     border-radius: 10%;
+    width: 20%;
+    height: 4em;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#666161;
+    border: .2em dotted rgb(8, 17, 8);
+    font-size: 1em;
+    font-family: 'Confortaa', 'cursive'; 
+    text-align: center;
+    color:rgb(14, 12, 12);
+
+
 }
 
 
+.workouttimeshow{
+
+    border-radius: 10%;
+    width: 20%;
+    height: 4em;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:#666161;
+    border: .2em dotted rgb(8, 17, 8);
+    font-size: 1em;
+    font-family: 'Confortaa', 'cursive'; 
+    text-align: center;
+    color:rgb(14, 12, 12);
+
+
+}
 
 h5{
      font-size: 2em;
@@ -34,6 +86,11 @@ h5{
 }
 
 h7{
+    font-size: 2em;
+    color:rgb(151, 240, 151)
+}
+
+h8{
     font-size: 2em;
     color:rgb(151, 240, 151)
 }
@@ -95,13 +152,13 @@ h7{
 
 
 .nav-pills { font-family: 'Comfortaa', 'cursive';
-    color: #aadcfd;
-    font-size: 2em;
-    background-color: rgb(22, 22, 51);
-    height: 20%;
+   
+    font-size: 1.5em;
+    font-weight: bolder;
+
+    background-image: url(assets/images/logoother/pixels.jpg);
+    height: 15%;
+   
     }
     
-    .nav-item{
-    
-        color: #aadcfd;
-    }
+ 
