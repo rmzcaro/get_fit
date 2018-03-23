@@ -1,5 +1,18 @@
-.topbanner{
 
+
+
+
+.MagicScroll{
+
+    height: 10em;
+    width: 60em;
+    margin-top: 1em;
+    margin-left: 10em;
+
+ 
+
+}
+.topbanner{
     background-color: rgb(83, 111, 119);
     height: 5em;
     text-align: center;
@@ -7,54 +20,64 @@
     padding-top: 2em;
     font-size: 3em;
     font-stretch: normal;
-
-
 }
+
 .container-fluid{
-
-    background-color: aqua;
+    background-color: rgb(29, 126, 126);
     padding: 1em 1em 1em 1em;
-    margin-left: auto;
-    margin-right: auto;
-
-
+    margin: 1em 1em 1em 1em;
+    width: 65em
 }
 
 #logo{
-
     width:6em;
     height:4em;
     float: left;
     margin-top:-1.6em
-   
-
 }
 
-.img-animate {
+
+#img-animate {
     position: center;
-    width:  400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-position: 50% 50%;
     background-size:     cover
 }
 
-.btn {
-
- width:400px
+#btn {
+ width:300px;
+ margin-top:.5em;
 }
 
-.both{
-   
-        display:inline-block;
-    }
+.both{  
+ display:inline-block;
+}
 
 .gifnbuttons{
-    margin-left: auto;
-    margin-right: auto;
-}
+        margin-right: 3%;
+        margin-left: 3%;
+     
+    }
+
 
 .fitfitfit {
     background-image: url("assets\images\logoother\mosaic.jpg");
     background-repeat: repeat
 }
 
+
+
+
+
+.nav-pills { font-family: 'Comfortaa', 'cursive';
+    color: #aadcfd;
+    font-size: 3em;
+    background-color: rgb(22, 22, 51);
+    height: 20%;
+    }
+    
+    .nav-item{
+    
+        color: #aadcfd;
+    }
