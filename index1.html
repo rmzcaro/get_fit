@@ -1,43 +1,27 @@
 <!DOCTYPE html>
-<!--   PSUEDOCODE
-
-USER PROFILE
-- Create a user profile 
-- Ask for music genre preference
-- (Use a firebase db to store this information)
-- (Db will have user profiles, food and drink images)
-- User will need to enter name,age, weight, height and a photo
-- User will submit that information
-- After they submit, the user profile should display all of the information that they entered
-
-FOOD/DRINK SELECTION
-- The user will then be directed to next page
-- User will select food or drink 
-- (Must have images already populated)
-- Based on selection, either food or drink items populate
-- (Image scroll functionality)
-- User selects individual item
-- Calorie info populates on page 
-- (Calorie calculator)
-- Amount/level of exercise also populates on page
-- (Exercise calculator)
-- User creates playlist
-- (On click event triggers Spotify API)
-- Music populates 
-- my awesome changes
-
-
--->
-<html lang="en">
 
 <head>
+    <html lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Get fit</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
-
+    <title>User Profile</title>
+    <!--link to the style sheet -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!--link to reset css -->
+    <link rel="stylesheet" href="./assets/reset.css">
+    <!-- link to bootstrap library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- link to jquery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!--link to firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- Link to Moment.js should go here -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -57,11 +41,11 @@ FOOD/DRINK SELECTION
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Products.html">Products</a>
+                    <a class="nav-link" href="./Products.html">Food</a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Blog.html">Blog</a>
+                    <a class="nav-link" href="./workout.html">Workout</a>
                 </li>
             </ul>
 
@@ -71,28 +55,56 @@ FOOD/DRINK SELECTION
         </div>
     </nav>
 
+    <div class="panel-heading">
+        <h4> User List</h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered" id="userTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Current Weight (lbs)</th>
+                    <th>Height (in)</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <br>
+
+
     <div class="container-fluid">
+
+
         <div class="row">
             <form class="col-md-3">
-                <p>Username:
-                    <input type="text" name="username">
+                <p>Firstname:
+                    <input type="text" name="firstname" id="firstNameInput">
+                </p>
+                <p>Lastname:
+                    <input type="text" name="lastname" id="lastNameInput">
+                </p>
+                <p>Email Address:
+                    <input type="text" name="email address" id="emailInput">
                 </p>
                 <p>Age:
-                    <input type="number" age="age">
+                    <input type="number" age="age" id="ageInput">
                 </p>
-                <p>Weight:
-                    <input type="number" weight="weight">
+                <p>Weight(in lbs):
+                    <input type="number" weight="weight" id="weightInput">
                 </p>
-                <p>Height:
-                    <input id="feet" type="number" name="feet" min="0" max="10" step="1">
-                    <label for="feet">feet:
-                    </label>
-                    <input id="inches" type="number" name="inches" min="0" max="11" step="1">
-                    <label for="inches">inches:
-                    </label>
+                <p>Height(inches):
+
+                    <input type="number" name="inches" min="0" max="100" step="1" id="heightInput">
+
                 </p>
                 <p>Gender:
-                    <input type="text" gender="gender">
+                    <input type="text" gender="gender" id="genderInput">
                 </p>
                 <p>
                     <input type="submit" class="btn-info" id="submit-btn">
@@ -107,8 +119,9 @@ FOOD/DRINK SELECTION
 
 
 
-        <script src="./getfit.js"></script>
-        <link src="./images.style.css">
+        <script type="text/javascript" src="./getfit.js"></script>
+</body>
+
 
 </body>
 
