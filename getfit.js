@@ -8,23 +8,21 @@ $(document).ready(function () {
             var apiKey = "c33c9593adf94c5e7fdc564c7cd0b1ff";
             var idAPI = "7cbf3fce";
 
-            // queryURL must be able to accept different entries +
-            // var food = 
-            var queryURL = "https://trackapi.nutritionix.com/v2/search/instant?query=apple";
-            var queryURL1 = "https://trackapi.nutritionix.com/v2/natural/nutrients";
-            // asynchronous HTTP request
+            //EVENT LISTENER
 
-            // the on click button event that gets the users pick(s) --- NEED TO MAKE THIS ACCEPT MULTIPLE ENTRIES 
-            // class name here 
+            // The on click event that gets the users input 
             $(".image").on("click", function () {
                 event.preventDefault();
-
-                // get the value associated with the button the user picked
-                userInput = $(this).val();
-
-                //test
-                // console.log("Your input " + userInput)
+                // Get the value associated with the button the user picked
+                // REVIEW THIS 
+                var userInput = $(this).val();
             });
+
+            // queryURL must be able to accept different entries. 
+            // CURRENTLY IT ONLY ACCEPTS 1 QUERY 
+            var queryURL = "https://trackapi.nutritionix.com/v2/search/instant?query=hotdog";
+            var queryURL1 = "https://trackapi.nutritionix.com/v2/natural/nutrients";
+            // asynchronous HTTP request
 
             $.ajax({
                 url: queryURL,
@@ -45,7 +43,8 @@ $(document).ready(function () {
                 // creates var for storing response 
                 var food_name = response.common[0].food_name;
                 var img = response.common[0].photo.thumb;
-
+                var servingQty = response.common[0].serving_qty;
+                var servingUnit = response.common[0].serving_unit;
 
                 $.ajax({
                     url: queryURL1,
@@ -68,6 +67,9 @@ $(document).ready(function () {
 
                 // push info into firebase 
                 database.ref().push(food_name);
+                database.ref().push(img);
+                database.ref().push(servingQty);            
+                database.ref().push(servingUnit);
 
                 alert("Food added!");
                 // name: name, 
