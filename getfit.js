@@ -85,37 +85,32 @@ $(document).ready(function () {
 
                 });
 
-               
-
-
-
-
                 // AJAX call to get exercise for low, medium, high intensity 
                 // need to get user id, gender, weight, height, age from db
 
-                // $.ajax({
-                //     url: exerciseURL, 
-                //     data:{
-                //         "query": "walking jogging jogging running",
-                //         "gender": "female",
-                //         "weight_kg": 72.5,
-                //         "height_cm":167.64,
-                //         "age": 30
-                //     },
-                //     method: "POST",
-                //     headers: {
-                //         "x-app-id": idAPI,
-                //         "x-app-key": apiKey,
-                //         contentType:"application/json"
-                //         //"x-remote-user-id": 0  
-                //     }
+                $.ajax({
+                    url: exerciseURL, 
+                    data:{
+                        "query": "walking jogging jogging running",
+                        "gender": "female",
+                        "weight_kg": 72.5,
+                        "height_cm":167.64,
+                        "age": 30
+                    },
+                    method: "POST",
+                    headers: {
+                        "x-app-id": idAPI,
+                        "x-app-key": apiKey,
+                        contentType:"application/json"
+                        //"x-remote-user-id": 0  
+                    }
 
-                // }).then(function(response){
-                //     // console.log(response);
+                }).then(function(response){
+                    console.log(response);
 
-                // //save exercise in variable 
-                // // var exercise = response.exercises
-                // });
+                // save exercise in variable 
+                var exercise = response.exercises
+                });
 
         });
 
