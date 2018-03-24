@@ -22,7 +22,7 @@ $(document).ready(function () {
      var height;
      var age;
      var gender;
-     var bmr
+     
     
      $(".btn-info").on("click", function () {
       event.preventDefault();
@@ -35,7 +35,7 @@ $(document).ready(function () {
       gender = $("#genderInput").val().trim();
 
         //For Female
-      bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+      //bmr = 10 * weight + 6.25 * height - 5 * age - 161;//
 
       //console.log user profile to make sure it works
       console.log(firstName);
@@ -48,7 +48,7 @@ $(document).ready(function () {
         height: height,
         gender: gender,
         age: age,
-        bmr: bmr,
+        
         dateAdded: firebase.database.ServerValue.TIMESTAMP,
 
       });
@@ -57,7 +57,7 @@ $(document).ready(function () {
       alert("New User has been added!");
     });
     database.ref().on("child_added", function (childSnapshot) {
-       var newRowContent = "<tr> <td>" + childSnapshot.val().firstName + "</td> <td>" + childSnapshot.val().lastName + "</td> <td>" + childSnapshot.val().weight + "</td> <td>" + childSnapshot.val().height + "</td> <td>" + childSnapshot.val().gender + "</td> <td>" + childSnapshot.val().age + "</td> <td>" + childSnapshot.val().bmr + "</td></tr>";
+       var newRowContent = "<tr> <td>" + childSnapshot.val().firstName + "</td> <td>" + childSnapshot.val().lastName + "</td> <td>" + childSnapshot.val().weight + "</td> <td>" + childSnapshot.val().height + "</td> <td>" + childSnapshot.val().gender + "</td> <td>" + childSnapshot.val().age + "</td></tr>";
        console.log(newRowContent);
       $("#userTable").append(newRowContent);
     }, function (errorObject) {
