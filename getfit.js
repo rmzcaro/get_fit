@@ -15,15 +15,17 @@ $(document).ready(function () {
             // The on click event that gets the users input 
             $(".image").on("click", function () {
                 event.preventDefault();
-                // Get the value associated with the button the user picked
+                // Get the value associated with the image the user picked
                 // REVIEW THIS 
                 userInput = $(this).attr("name");
                 console.log(userInput);
 
-            // queryURL must be able to accept different entries. 
-            // CURRENTLY IT ONLY ACCEPTS 1 QUERY 
+            //search url for common food 
             var queryURL = "https://trackapi.nutritionix.com/v2/search/instant?query=" + userInput;
+            //nutrients url 
             var queryURL1 = "https://trackapi.nutritionix.com/v2/natural/nutrients";
+            //exercise url
+            var exerciseURL = "https://trackapi.nutritionix.com/v2/natural/exercise";
             // asynchronous HTTP request
 
             $.ajax({
@@ -71,10 +73,50 @@ $(document).ready(function () {
 
                     //WE NEED TO CONSOLE LOG CALORIES HERE 
                     //save variable for calories
-                    var calories = nutrition.foods[0].metadata.nf_calories;
+                    var calories = nutrition.foods[0].nf_calories;
                     console.log(calories);
 
+                // push info of food, calories into firebase 
+                database.ref().push(food_name);
+                database.ref().push(img);
+                database.ref().push(servingQty);            
+                database.ref().push(servingUnit);
+                database.ref().push(calories);
+
                 });
+
+               
+
+
+
+
+                // AJAX call to get exercise for low, medium, high intensity 
+                // need to get user id, gender, weight, height, age from db
+
+                // $.ajax({
+                //     url: exerciseURL, 
+                //     data:{
+                //         "query": "walking jogging jogging running",
+                //         "gender": "female",
+                //         "weight_kg": 72.5,
+                //         "height_cm":167.64,
+                //         "age": 30
+                //     },
+                //     method: "POST",
+                //     headers: {
+                //         "x-app-id": idAPI,
+                //         "x-app-key": apiKey,
+                //         contentType:"application/json"
+                //         //"x-remote-user-id": 0  
+                //     }
+
+                // }).then(function(response){
+                //     // console.log(response);
+
+                // //save exercise in variable 
+                // // var exercise = response.exercises
+                // });
+
         });
 
 
