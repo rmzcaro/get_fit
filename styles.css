@@ -44,41 +44,46 @@
     color:rgb(14, 12, 12);
 }
     
-.caloriesshow{
-     border-radius: 10%;
-    width: 20%;
-    height: 4em;
+#caloriesshow{
+    border-radius: 10%;
+    width: 25%;
+    height: 5em;
     margin-top: 2em;
-    margin-right: auto;
-    margin-left: auto;
     background-color:#666161;
     border: .2em dotted rgb(8, 17, 8);
-    font-size: 1em;
+    font-size: 2em;
     font-family: 'Confortaa', 'cursive'; 
     text-align: center;
     color:rgb(14, 12, 12);
+    display: inline-block;
+    margin-left:20%;
+    
+
+   
 
 
 }
 
-
-.workouttimeshow{
+#workouttimeshow{
 
     border-radius: 10%;
-    width: 20%;
-    height: 4em;
+    width: 25%;
+    height: 5em;
     margin-top: 2em;
-    margin-right: auto;
-    margin-left: auto;
     background-color:#666161;
     border: .2em dotted rgb(8, 17, 8);
-    font-size: 1em;
+    font-size: 2em;
     font-family: 'Confortaa', 'cursive'; 
     text-align: center;
     color:rgb(14, 12, 12);
-
+    display: inline-block;
+    margin-right: 20%;
+    
+   
 
 }
+
+
 
 h5{
      font-size: 2em;
@@ -137,6 +142,7 @@ h8{
 .both{  
  display:inline-block;
 }
+
 
 .gifnbuttons{
         margin-right: 3%;
