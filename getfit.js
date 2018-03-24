@@ -1,3 +1,10 @@
+
+
+  $(document).ready(function(){
+    alert('sup');
+  });
+
+  window.onload(alert('hello world!'));
 // jQuery var we will use insted of the literal string inside 
 // the ajax call 
 
